@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textDashBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:text="Settings"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textDashBoard"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20dp"
+            android:inputType="numberDecimal" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/temperature_inside_limit"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/mybutton"
+            android:padding="10dp"
+            android:text="Set Temperature inside limit"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText1"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20dp"
+            android:inputType="numberDecimal" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/temperature_outside_limit"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/mybutton"
+            android:padding="10dp"
+            android:text="Set Temperature outside limit"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText2"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20dp"
+            android:inputType="numberDecimal" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/humidity_inside_limit"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/mybutton"
+            android:padding="10dp"
+            android:text="Set Humidity Inside Limit"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText3"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20dp"
+            android:inputType="numberDecimal" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/humidity_outside_limit"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/mybutton"
+            android:padding="10dp"
+            android:text="Set Humidity Outside Limit"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText4"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20dp"
+            android:inputType="numberDecimal" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/gas_limit"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText5"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/mybutton"
+            android:padding="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Set Gas Limit"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText5"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20dp"
+            android:inputType="numberDecimal" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/water_max_limit"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText6"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/mybutton"
+            android:padding="10dp"
+            android:text="Set Water Max Limit"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText6"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20dp"
+            android:inputType="numberDecimal" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/water_min_limit"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText7"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/mybutton"
+            android:padding="10dp"
+            android:text="Set Water Min Limit"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
